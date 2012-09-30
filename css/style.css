@@ -8,8 +8,8 @@ a:hover{color: #000;}
 a:focus{outline: thin dotted;}
 a:hover, a:active{outline: 0;}
 
-::-moz-selection{background: #56D2C7; color: #fff; text-shadow: none;}
-::selection{background: #56D2C7; color: #fff; text-shadow: none;}
+::-moz-selection{background: #999999; color: #fff; text-shadow: none;}
+::selection{background: #999999; color: #fff; text-shadow: none;}
 
 /***
 *
@@ -111,9 +111,52 @@ header {
 			background-image: url(../img/book.png);
 			background-size: 100%;
 			float: left;
+			position: relative;
 			width: 50px;
 			height: 100%;
 		}
+
+			#h-course-list {
+				background-color: #EFEFEF;
+				border-bottom: 1px #E5E5E5 solid;
+				border-right: 1px #E5E5E5 solid;
+				box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+				display: none;
+				position: absolute;
+					left: -191px;
+					top: 50px;
+				width: 240px;
+			}
+
+				#h-courses .course {
+					font-size: 12px;
+					overflow: hidden;
+					height: 32px;
+				}
+
+				#h-courses .course:hover {
+					background-color: #E5E5E5;
+				}
+
+				#h-courses .course-code {
+					background-color: #E5E5E5;
+					float: left;
+					padding: 10px 20px;
+				}
+
+				#h-courses .winter {
+					color: #999;
+				}
+
+				#h-courses .course-name {
+					float: left;
+					padding: 10px 20px;
+				}
+
+		#h-courses:hover #h-course-list {
+			display: block;
+		}
+
 
 		#h-notification {
 			background-image: url(../img/notification.png);
