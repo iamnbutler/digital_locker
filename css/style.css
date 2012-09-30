@@ -18,6 +18,7 @@ a:hover, a:active{outline: 0;}
 ***/
 
 html, body {
+	overflow: hidden;
 	width: 100%;
 	height: 100%;
 }
@@ -37,6 +38,10 @@ li, img, a {
 	vertical-align: baseline;
 }
 
+.theme-text {
+	color: #6D9EEB;
+}
+
 /***
 *
 *  Header
@@ -44,29 +49,107 @@ li, img, a {
 ***/
 
 header {
-	background: white;
-	margin-top: 30px;
+	background: #EFEFEF;
+	border-bottom: 1px #E5E5E5 solid;
 	width: 100%;
-	height: 80px;
+	height: 50px;
 }
 
-	header h1 {
-		font-size: 28px;
-		font-weight: bold;
-		letter-spacing: -1px;
-		margin-bottom: 20px;
-		padding: 26px 0px;
-		padding-left: 50px;
+	#h-left {
+		float: left;
+		padding-left: 20px;
 	}
 
+		#h-left h1 {
+			font-size: 16px;
+			font-weight: bold;
+			padding: 17px 0;
+		}
+
+	#h-right {
+		float: right;
+		padding-right: 20px;
+		height: 100%;
+	}
+
+		#h-user {
+			float: left;
+			height: 100%;
+		}
+
+			#h-user-text {
+				float: left;
+				height: 100%;
+			}
+
+				#h-name, #h-logout {
+					color: #333;
+					font-size: 12px;
+					line-height: 12px;
+					text-align: right;
+				}
+
+				#h-name {
+					font-weight: bold;
+					padding: 10px 10px 3px 0px;
+				}
+
+				#h-logout {
+					color: #666;
+					padding: 3px 10px 10px 0px;
+				}
+
+		#h-avatar {
+			background-image: url(../img/avatar.jpg);
+			background-size: 100%;
+			float: left;
+			width: 50px;
+			height: 100%;
+		}
+
+		#h-courses {
+			background-image: url(../img/book.png);
+			background-size: 100%;
+			float: left;
+			width: 50px;
+			height: 100%;
+		}
+
+		#h-notification {
+			background-image: url(../img/notification.png);
+			background-size: 100%;
+			float: left;
+			position: relative;
+			width: 50px;
+			height: 100%;
+		}
+
+			#h-n-value {
+				
+			}
+
+		#h-option {
+			background-image: url(../img/gear.png);
+			background-size: 100%;
+			float: left;
+			width: 50px;
+			height: 100%;
+		}
+
+		#h-option:hover, #h-notification:hover, #h-courses:hover {
+			background-color: #E5E5E5;
+		}
 
 /***
 *
-*  Body
+*  Sub Header
 *
 ***/
 
-#body {
+#sub-header {
+	background-color: #FFFFFF;
+	border-bottom: 1px #E5E5E5 solid;
+	height: 98px;
 	width: 100%;
 }
 
@@ -77,80 +160,30 @@ header {
 ***/
 
 #sidebar {
-	width: 300px;
+	border-right: 4px #E5E5E5 solid;
+	float: left;
+	padding: 20px;
+	position: relative;
+	width: 220px;
+	height: 100%;
 }
 
-#sidebar-nav {
-	margin-top: 30px;
-	width: 200px;
-}
-	#sidebar-nav li {
-		padding-left: 50px;
-		width: 100%;
-	}
-
-	#sidebar-nav li a {
+	#sidebar .top-tier {
 		font-size: 14px;
 		font-weight: bold;
-		padding: 13px 0px;
 		text-transform: uppercase;
 	}
 
-	#sidebar-nav li ul li {
-		border-top: 1px solid white;
-		display: none;
-		font-weight: normal;
-		padding-left: 10px;
-		width: 96%;
-	}
+/***
+*
+*  Stage
+*
+***/
 
-	#sidebar-nav li ul li:last-child {
-		border-bottom: 1px solid white;
-	}
-
-	/* Sidebar Nav Theme Colors */
-
-	#sidebar-nav .tier-one:nth-child(1) a {
-		border-color: rgb(195,101,96);
-	}
-
-	#sidebar-nav .tier-one:nth-child(1) li a {
-		border-color: rgba(195,101,96,0.8);
-	}
-
-	#sidebar-nav .tier-one:nth-child(2) a {
-		border-color: rgb(157,137,132);
-	}
-
-	#sidebar-nav .tier-one:nth-child(2) li a {
-		border-color: rgba(157,137,132,0.8);
-	}
-
-	#sidebar-nav .tier-one:nth-child(3) a {
-		border-color: rgb(96,147,160);
-	}
-
-	#sidebar-nav .tier-one:nth-child(3) li a {
-		border-color: rgba(96,147,160,0.8);
-	}
-
-	#sidebar-nav .tier-one:nth-child(4) a {
-		border-color: rgb(47,101,131);
-	}
-
-	#sidebar-nav .tier-one:nth-child(4) li a {
-		border-color: rgba(47,101,131,0.8);
-	}
-
-	#sidebar-nav .tier-one:nth-child(5) a {
-		border-color: rgb(85,144,124);
-	}
-
-	#sidebar-nav .tier-one:nth-child(5) li a {
-		border-color: rgba(85,144,124,0.8);
-	}
-
-.tier-one-selected {
-	border-left: 5px solid;
-	padding-left: 45px;
+#stage {
+	float: left;
+	padding: 20px;
+	position: relative;
+	height: 100%;
+	width: 10px;
 }

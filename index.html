@@ -19,47 +19,38 @@
 	</head>
 	<body>
 		<header>
-			<h1>Digital <span>Locker</span></h1>
+			<ul id="h-left">
+				<h1>Digital <span>Locker</span></h1>
+			</ul>
+			<ul id="h-right">
+				<li id="h-user">
+					<ul id="h-user-text">
+						<li id="h-name">Nathan B</li>
+						<li id="h-logout">logout</li>
+					</ul>
+					<div id="h-avatar"></div>
+				</li>
+				<li id="h-courses"></li>
+				<li id="h-notification">
+					<div id="h-n-value"></div>
+				</li>
+				<li id="h-option"></li>
+			</ul>
 		</header>
 
-		<section id="body">
-			<section id="sidebar">
-				<ul id="sidebar-nav">
-					<li id="sidebar-nav-archive" class="tier-one">
-						<a href="">Archive</a>
-						<ul>
-							<li class="tier-two"><a href="">Course Work</a></li>
-							<li class="tier-two"><a href="">News &amp; Events</a></li>
-						</ul>
-					</li>
-					<li id="sidebar-nav-courses" class="tier-one">
-						<a href="">Courses</a>
-						<ul>
-							<li class="tier-two"><a href="">My Courses</a></li>
-							<li class="tier-two"><a href="">Course List</a></li>
-						</ul>
-					</li>
-					<li id="sidebar-nav-files" class="tier-one">
-						<a href="">Files</a>
-						<ul>
-							<li class="tier-two"><a href="">User Account</a></li>
-							<li class="tier-two"><a href="">Sites</a></li>
-						</ul>
-					</li>
-					<li id="sidebar-nav-courses" class="tier-one">
-						<a href="">Resources</a>
-						<ul>
-							<li class="tier-two"><a href="">Equipment</a></li>
-							<li class="tier-two"><a href="">Print</a></li>
-							<li class="tier-two"><a href="">Interactivity</a></li>
-						</ul>
-					</li>
-				</ul>
-			</section>
+		<section id="sub-header">
 
-			<section id="stage">
-			</section>
 		</section>
+
+		<section id="sidebar">
+			<ul class="theme-text">
+				<li class="top-tier">Courses</li>
+				<li class="top-tier">Resources</li>
+				<li class="top-tier">Archive</li>
+			</ul>
+		</section>
+
+		<section id="stage"></section>
 
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
