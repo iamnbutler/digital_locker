@@ -5,7 +5,7 @@
 	var winWidth = $(window).width();
 	var winHeight = $(window).height();
 
-	var sidebarWidth = 220;
+	var sidebarWidth = 180;
 
 	function setContent() {
 
@@ -16,7 +16,7 @@
 		var winHeight = $(window).height();
 
 		// Subtrack header height from window height to get the left column and stage height
-		var bodyHeight = (winHeight - 190);
+		var bodyHeight = (winHeight - 90);
 		$('#sidebar, #stage').height(bodyHeight);
 		$('#sidebar').width(sidebarWidth);
 
@@ -36,6 +36,27 @@ $(window).load(function() {
 
 // Load scripts that come after page loads
 $(document).ready(function(){
+
+	/***
+	*
+	*  Header
+	*
+	***/
+
+	// Animate logo background
+	/* $('#h-logo').find('h1').hover().animate({
+		backgroundColor: '#E5E5E5'
+	}, 800); */
+
+	// Focus search bar when clicking search icon
+	$('#h-search-icon').click(function(){
+		$('#h-search input').animate({backgroundColor: '#E5E5E5'}, 100).animate({backgroundColor: '#EFEFEF'}, 800);
+	});
+
+	// Show sub-nav on nav icon click
+	$('.h-nav').click(function(){
+		$(this).children('ul').toggle();
+	});
 
 });
 
