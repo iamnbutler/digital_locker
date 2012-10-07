@@ -67,6 +67,23 @@ $(document).ready(function(){
 			$('#sidebar').css('left', 0);
 		}
 	);
+
+	/* Navigation Links */
+
+	$('#sidebar').find('li').click(function(){
+		$('#sidebar').find('li').removeClass('selected');
+		$(this).addClass('selected');
+	
+	});
+
+	$('#s-course-int-2').click(function(){
+		$('#st-welcome').fadeOut();
+		$('#st-container').hide();
+		$('#st-container').load('sites/2005_Interactivity_2/index.html .container');
+		$('#st-container').fadeIn();
+	});
+
+
 });
 
 // Run these scripts when the window is resized

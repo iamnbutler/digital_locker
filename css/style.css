@@ -33,9 +33,13 @@ h1, h2, li, p {
 	font-family: 'Helvetica', Helvetica Neue, Arial, sans-serif;
 }
 
-li, img, a {
+li, img {
 	display: block;
 	vertical-align: baseline;
+}
+
+a {
+	color: #6D9EEB;
 }
 
 .theme-text {
@@ -299,6 +303,25 @@ header {
 	height: 100%;
 	width: 10px;
 }
+
+	#st-welcome {
+		margin-top: 60px;
+		margin-left: 35%;
+		width: 30%;
+	}
+
+	#st-welcome h2 {
+		font-size: 260%;
+		line-height: 140%;
+		margin-bottom: 20px;
+	}
+
+	#st-welcome p {
+		color: #515151;
+		font-size: 105%;
+		line-height: 140%;
+		margin-bottom: 20px;
+	}
 
 /***
 *
