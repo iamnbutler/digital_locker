@@ -16,13 +16,9 @@
 		var winHeight = $(window).height();
 
 		// Subtrack header height from window height to get the left column and stage height
-		var bodyHeight = (winHeight - 90);
-		$('#sidebar, #stage').height(bodyHeight);
-		$('#sidebar').width(sidebarWidth);
-
-		// Subtrack sidebar width from window width for stage width (subtract sidebar padding plus right border width)
-		var stageWidth = (winWidth - sidebarWidth - 84);
-		$('#stage').width(stageWidth);
+		var bodyHeight = (winHeight - 50);
+		$('#dl-sidebar, #dl-stage').height(bodyHeight);
+		$('#dl-sidebar').width(sidebarWidth);
 	};
 
 // Load scripts immediately
@@ -61,25 +57,30 @@ $(document).ready(function(){
 
 	$('#s-spine').toggle(
 		function() {
-			$('#sidebar').css('left', -220);
+			$('#dl-sidebar').css('left', -220);
 		}, 
 		function(){
-			$('#sidebar').css('left', 0);
+			$('#dl-sidebar').css('left', 0);
 		}
 	);
 
 	/* Navigation Links */
 
-	$('#sidebar').find('li').click(function(){
-		$('#sidebar').find('li').removeClass('selected');
+	$('#dl-sidebar').find('li').click(function(){
+		$('#dl-sidebar').find('li').removeClass('selected');
 		$(this).addClass('selected');
 	
+	});
+
+	$('#s-primary-home').click(function(){
+		$('#st-container').fadeOut();
+		$('#st-welcome').fadeIn();
 	});
 
 	$('#s-course-int-2').click(function(){
 		$('#st-welcome').fadeOut();
 		$('#st-container').hide();
-		$('#st-container').load('sites/2005_Interactivity_2/index.html .container');
+		$('#st-container').load('sites/2005_Interactivity_2/index.html');
 		$('#st-container').fadeIn();
 	});
 

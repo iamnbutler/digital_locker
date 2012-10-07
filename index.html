@@ -12,19 +12,17 @@
 		<meta name="author" content="name">
 		<meta name="copyright" content="&copy; 2012">
 
-
 		<link rel="icon" type="image/png" href="">
+		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/style.css">
-
 	</head>
 	<body>
-		<header>
+		<header id="dl-header">
 			<ul id="h-left">
 				<li id="h-logo">
 					<a href="/"><h1>Digital Locker</h1></a>
 				</li>
-				<li id="h-search-icon"></li>
-				<li id="h-search"><input type="text" name="search" autocomplete="off"></input></li>
+				
 			</ul>
 			<ul id="h-right">
 				<li id="h-user">
@@ -34,53 +32,18 @@
 					</ul>
 					<div id="h-avatar"></div>
 				</li>
-				<li id="h-courses" class="h-nav">
-					<ul id="h-course-list">
-						<li class="course fall">
-							<div class="course-code">2003</div>
-							<div class="course-name">Typography 2</div>
-						</li>
-						<li class="course fall">
-							<div class="course-code">2004</div>
-							<div class="course-name">Communication Design 1</div>
-						</li>
-						<li class="course fall">
-							<div class="course-code">2005</div>
-							<div class="course-name">Interactivity 2</div>
-						</li>
-						<li class="course fall">
-							<div class="course-code">2102</div>
-							<div class="course-name">History of Design</div>
-						</li>
-						<li class="course winter">
-							<div class="course-code">2007</div>
-							<div class="course-name">Typography 3</div>
-						</li>
-						<li class="course winter">
-							<div class="course-code">2012</div>
-							<div class="course-name">Drawing for Design</div>
-						</li>
-						<li class="course winter">
-							<div class="course-code">2103</div>
-							<div class="course-name">Research in Design</div>
-						</li>
-						<li class="course winter">
-							<div class="course-code">2107</div>
-							<div class="course-name">History of Typography</div>
-						</li>
-					</ul>
-				</li>
 				<li id="h-notification" class="h-nav">
 					<div id="h-n-value"></div>
 				</li>
+				<li id="h-search-icon"></li>
 				<li id="h-option" class="h-nav"></li>
 			</ul>
 		</header>
 
-		<section id="sidebar">
+		<section id="dl-sidebar">
 			<div id="s-inner-wrapper">
 				<ul class="s-primary-nav">
-					<li class="top-tier selected">Home</li>
+					<li class="top-tier selected" id="s-primary-home">Home</li>
 					<li class="top-tier">Courses</li>
 					<li class="top-tier">Resources</li>
 					<li class="top-tier">Equipment</li>
@@ -110,7 +73,7 @@
 			<div id="s-spine"></div>
 		</section>
 
-		<section id="stage">
+		<section id="dl-stage">
 			<div id="st-welcome" class="st-item">
 				<h2>Welcome to the Digital Locker front-end concept!</h2>
 				<p>Take a look around and see what you think! Remember this is a very early stage of development, so many things are non-functional or even temporary.</p>
@@ -135,6 +98,7 @@
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
 		<script src="js/jquery-ui-1.8.24.min.js"></script>
+		<script src="js/bootstrap.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>
 </html>
