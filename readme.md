@@ -1,4 +1,4 @@
-﻿Digital Locker Readme
+﻿Digital Locker
 ================================
 
 ##Disclaimer

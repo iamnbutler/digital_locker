@@ -5,7 +5,7 @@
 	var winWidth = $(window).width();
 	var winHeight = $(window).height();
 
-	var sidebarWidth = 180;
+	var sidebarWidth = 228;
 
 	function setContent() {
 
@@ -43,11 +43,6 @@ $(document).ready(function(){
 	*
 	***/
 
-	// Animate logo background
-	/* $('#h-logo').find('h1').hover().animate({
-		backgroundColor: '#E5E5E5'
-	}, 800); */
-
 	// Focus search bar when clicking search icon
 	$('#h-search-icon').click(function(){
 		$('#h-search input').animate({backgroundColor: '#E5E5E5'}, 100).animate({backgroundColor: '#EFEFEF'}, 800);
@@ -58,6 +53,20 @@ $(document).ready(function(){
 		$(this).children('ul').toggle();
 	});
 
+	/***
+	*
+	*  Sidebar
+	*
+	***/
+
+	$('#s-spine').toggle(
+		function() {
+			$('#sidebar').css('left', -220);
+		}, 
+		function(){
+			$('#sidebar').css('left', 0);
+		}
+	);
 });
 
 // Run these scripts when the window is resized

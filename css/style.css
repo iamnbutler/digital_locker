@@ -68,7 +68,7 @@ header {
 			border-right: 1px #E5E5E5 solid;
 			font-size: 16px;
 			font-weight: bold;
-			padding: 17px 20px;
+			padding: 17px 27px;
 		}
 
 		#h-search-icon {
@@ -228,18 +228,62 @@ header {
 ***/
 
 #sidebar {
-	border-right: 4px #E5E5E5 solid;
 	float: left;
-	padding: 20px;
 	position: relative;
-	width: 180px;
+	width: 228px;
 	height: 100%;
 }
 
-	#sidebar .top-tier {
-		font-size: 14px;
+	#s-inner-wrapper {
+		float: left;
+		padding: 20px;
+		padding-right: 16px;
+		position: relative;
+		width: 180px;
+		height: 100%;
+	}
+
+	#s-spine {
+		border-right: 8px #E5E5E5 solid;
+		background-color: white;
+		float: left;
+		position: relative;
+		width: 4px;
+		height: 100%;
+	}
+	
+	#s-spine:hover {
+		border-right: 8px #6D9EEB solid;
+	}
+
+	#sidebar li:hover {
+		background-color: #F9F9F9;	
+	}
+
+	#sidebar .selected {
+		background-color: #EFEFEF;
+	}
+
+	#sidebar .nav-title {
+		border-bottom: 1px #E5E5E5 solid;
+		font-size: 13px;
 		font-weight: bold;
 		text-transform: uppercase;
+		margin-bottom: 4px;
+	}
+
+	#sidebar .top-tier {
+		cursor: pointer;
+		font-size: 14px;
+		padding: 8px;
+		}
+
+	.s-primary-nav {
+		font-weight: bold;
+	}
+
+	.s-course-nav, .s-custom-nav, .s-external-nav {
+		margin-top: 20px;
 	}
 
 /***
