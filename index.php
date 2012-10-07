@@ -17,6 +17,10 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
+<<<<<<< HEAD:index.html
+=======
+
+>>>>>>> origin/master:index.php
 		<header id="dl-header">
 			<ul id="h-left">
 				<li id="h-logo">
@@ -27,10 +31,23 @@
 			<ul id="h-right">
 				<li id="h-user">
 					<ul id="h-user-text">
-						<li id="h-name">Nathan B</li>
+						<li id="h-name" class="user-link">Nathan B</li>
 						<li id="h-logout">logout</li>
 					</ul>
+<<<<<<< HEAD:index.html
 					<div id="h-avatar"></div>
+=======
+
+					<?php
+						$email = "iamnbutler@gmail.com";
+						$default = "http://www.somewhere.com/homestar.jpg";
+						$size = 50;
+
+						$grav_url = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $email ) ) ) . "?d=" . urlencode( $default ) . "&s=" . $size;
+					?>
+
+					<div id="h-avatar" class="user-link" style="background-image: url(<?php echo $grav_url; ?>);"></div>
+>>>>>>> origin/master:index.php
 				</li>
 				<li id="h-notification" class="h-nav">
 					<div id="h-n-value"></div>
@@ -44,7 +61,11 @@
 			<div id="s-inner-wrapper">
 				<ul class="s-primary-nav">
 					<li class="top-tier selected" id="s-primary-home">Home</li>
+<<<<<<< HEAD:index.html
 					<li class="top-tier">Courses</li>
+=======
+					<li class="top-tier" id="s-primary-courses">Courses</li>
+>>>>>>> origin/master:index.php
 					<li class="top-tier">Resources</li>
 					<li class="top-tier">Equipment</li>
 					<li class="top-tier">Archive</li>

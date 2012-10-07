@@ -74,14 +74,36 @@ $(document).ready(function(){
 
 	$('#s-primary-home').click(function(){
 		$('#st-container').fadeOut();
+<<<<<<< HEAD
 		$('#st-welcome').fadeIn();
+=======
+		$('#st-welcome').fadeIn(800);
+	});
+
+	$('.user-link').click(function(){
+		$('#st-welcome').fadeOut();
+		$('#st-container').hide();
+		$('#st-container').load('templates/user.php');
+		$('#st-container').fadeIn(800);
+	});
+
+	$('#s-primary-courses').click(function(){
+		$('#st-welcome').fadeOut();
+		$('#st-container').hide();
+		$('#st-container').load('templates/courses.html');
+		$('#st-container').fadeIn(800);
+>>>>>>> origin/master
 	});
 
 	$('#s-course-int-2').click(function(){
 		$('#st-welcome').fadeOut();
 		$('#st-container').hide();
 		$('#st-container').load('sites/2005_Interactivity_2/index.html');
+<<<<<<< HEAD
 		$('#st-container').fadeIn();
+=======
+		$('#st-container').fadeIn(800);
+>>>>>>> origin/master
 	});
 
 

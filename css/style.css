@@ -104,7 +104,6 @@ a:hover {
 				}
 
 		#h-avatar {
-			background-image: url(../img/avatar.jpg);
 			background-size: 100%;
 			float: left;
 			width: 50px;
@@ -235,8 +234,17 @@ a:hover {
 	z-index: 1;
 }
 
+<<<<<<< HEAD
 	#st-welcome {
 		margin-top: 60px;
+=======
+	.st-item {
+		position: absolute;
+			top: 60px;
+	}
+
+	#st-welcome {
+>>>>>>> origin/master
 		margin-left: 35%;
 		width: 30%;
 	}
@@ -259,6 +267,39 @@ a:hover {
 		width: 100%;
 	}
 
+<<<<<<< HEAD
+=======
+/***
+*
+*  Sections
+*
+***/
+
+	.sec-center {
+		margin-left: 50%;
+		position: absolute;
+			left: -470px;
+		width: 940px;
+	}
+
+	#sec-user {
+
+	}
+
+		#sec-user #avatar-wrap {
+			border: 1px #E5E5E5 solid;
+			padding: 4px;
+			width: 160px;
+			height: 160px;
+		}
+
+		#sec-user #avatar {
+			width: 160px;
+			height: 160px;
+		}
+
+
+>>>>>>> origin/master
 /***
 *
 *  NOSCRIPT
